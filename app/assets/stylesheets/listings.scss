@@ -1,0 +1,106 @@
+@import "variables";
+
+.listings-container {
+  position: relative;
+  top: 115px;
+}
+
+.count-lists-container {
+  float: left;
+  width: 57%;
+  height: 100vh;
+  margin-top: 8px;
+  margin-left: 30px;
+  margin-right: 30px;
+  padding: 0;
+  position: absolute;
+}
+
+.map-container {
+  float: left;
+  overflow: hidden;
+  right: 0;
+  position: fixed;
+  top: 114px;
+  width: 40%;
+  height: 86vh;
+
+  #map {
+    height: 100%;
+    background: $nav-grey;
+  }
+}
+
+.listings{
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+
+.count-lists {
+  font-weight: 800;
+  padding: 20px 0;
+  font-size: 26px;
+}
+
+.listing-box {
+  position: relative;
+  margin: 8px 15px 8px 0;
+  background: white;
+  width: 300px;
+}
+
+.image {
+  position: relative;
+  display: inline-block;
+  height: 200px;
+  width: 100%;
+  border-radius: 3px;
+  overflow: hidden;
+  white-space: nowrap;
+  background: $nav-grey;
+}
+
+.textarea {
+  padding-top: 8px;
+  :hover {
+    cursor: pointer;
+  }
+}
+
+.type-bed {
+  display: block;
+  height: 16px;
+  max-height: 16px;
+  line-height: 1.3333em;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 900;
+  color: $listing-grey;
+  text-transform: uppercase;
+}
+
+.title {
+  margin-top: 4px;
+  line-height: 1.375em;
+  overflow-wrap: break-word;
+  font-size: 16px;
+  font-weight: 900;
+  color: $listing-darkgrey;
+}
+
+.price {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.285;
+  color: $listing-darkgrey;
+}
+
+.host {
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.3333em;
+  color: $listing-darkgrey;
+}

@@ -1,0 +1,35 @@
+@import "variables";
+
+.hidden {
+	display: none;
+}
+
+.dropdown {
+	position: absolute;
+	top: 55px;
+	right: 25px;
+	background: white;
+	border: 1px solid $nav-grey;
+  border-radius: 2px;
+	width: 150px;
+	z-index: 10;
+	color: $listing-darkgrey;
+	text-align: left;
+	box-shadow: -1px 4px 6px 1px rgba(0,0,0,0.09);
+  font-weight: initial;
+  li {
+    text-align: right;
+    padding: 10px;
+    border-bottom: 1px solid $nav-grey;
+  }
+
+  li:hover{
+    cursor: pointer;
+    background: $nav-grey;
+  }
+
+  a {
+    color: $listing-darkgrey;
+    text-decoration: none;
+  }
+}

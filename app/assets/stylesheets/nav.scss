@@ -1,0 +1,130 @@
+@import "variables";
+
+.nav-landing {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  // display: block;
+  overflow: visible;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  img {
+    padding: 18px;
+    margin-left: 10px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.navbar-logosearch {
+  display: flex;
+}
+
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.nav-menu {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  span {
+    padding: 20px 10px;
+    color: $emerald;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align-last: center;
+    font-weight: 900;
+    cursor: pointer;
+  }
+
+  span:hover {
+    border-bottom: 2px solid $emerald;
+  }
+}
+
+
+
+.on{
+  .navbar-searchbox {
+    display: none;
+  }
+}
+
+
+.off {
+  .nav-landing{
+    border-bottom: 1px solid $nav-grey;
+    background: white;
+    .navbar-searchbox {
+      flex-direction: column;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      margin-left: 15px;
+      width: 416px;
+      
+      
+    }
+    .nav-menu{
+      a {
+        color: $listing-darkgrey;
+      }
+      a:hover {
+        border-bottom: 2px solid $listing-darkgrey;
+      }
+    }
+  }
+}
+
+.navbar-searchbox-container{
+  display: flex;
+  justify-content: left;
+  // input {
+    // display: block;
+    border-radius: 2px;
+    border: 1px solid $nav-grey;
+    width: calc(100% - 21px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px;
+  // }
+  i {
+    margin: auto 0 auto 15px;
+    // width: 100%;
+  }
+  input {
+    border: none;
+    color: $grey;
+    font-size: 15px;
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+.profile-menu {
+  margin: auto 25px;
+  display: flex;
+
+  .currentuser-name{
+    margin: 14px;
+  }
+
+  .currentuser-icon{
+    background-image: image_url('profile.jpg');
+    display: block;
+    margin: 0 auto;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    border: 2px solid $light-grey;
+  }
+  .currentuser-icon:hover {
+    cursor: pointer;
+  }
+}

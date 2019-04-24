@@ -1,0 +1,178 @@
+@import "variables";
+
+.main-section-profile {
+  position: relative;
+  margin: 40px auto;
+  width: 85%;
+  max-width: 1048px;
+  top: 69px;
+}
+
+.user-glance-container {
+  float: left;
+  width: 25%;
+  margin-right: 65px;
+  padding: 10px;
+  border: 1px solid $nav-grey;
+  border-radius: 2px;
+
+  .user-info-container {
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: 1px solid $nav-grey;
+
+    h3{
+      text-align: left;
+      font-size: 16px;
+      font-weight: 800;
+      margin: 0 0 20px 10px;
+    }
+    .user-picture {
+      background-image: image_url('profile.jpg');
+      display: block;
+      margin: 0 auto;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background-size: cover;
+      border-color: white;
+    }
+
+    .upload-image {
+      display: block;
+      font-size: 14px;
+      font-weight: 800;
+      color: $emerald;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+    .user-activity {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 15px 10px;
+      i {
+        font-size: 14px;
+        margin-right: 15px;
+      }
+    }
+    .user-activity:first-of-type{
+      margin-top: 0;
+    }
+    .user-activity:last-of-type{
+      margin-bottom: 0;
+    }
+  }
+  .user-info-container:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.user-rentals-container {
+  float: left;
+  width: 60%;
+  .user-information-container{
+    border-bottom: 1px solid $nav-grey;
+
+    h1 {
+      font-size: 40px;
+      font-weight: 800;
+      display: block;
+    }
+    .join-date{
+      font-size: 14px;
+      font-weight: 800;
+      display: block;
+      padding-top: 10px;
+      span {
+        color: $emerald;
+      }
+      span:hover {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+
+    .residence{
+      padding: 35px 0;
+      font-size: 14px;
+      font-weight: 400;
+
+      i {
+        font-size: 14px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .user-rental-list-container{
+    padding: 30px 0;
+
+    h2 {
+      font-size: 24px;
+      font-weight: 800;
+      padding-bottom: 25px;
+    }
+
+    .user-rental-list{
+      margin: 15px 0 20px 0;
+      height: 100px;
+      box-sizing: border-box;
+      .user-rental-picture{
+        float: left;
+        height: 100px;
+        width: 25%;
+        background: $nav-grey;
+      }
+
+      .user-rental-information{
+        float: left;
+        width: 73%;
+        .rental-title{
+          font-size: 15px;
+          font-weight: 800;
+          margin-bottom: 5px;
+          margin-left: 15px;
+          line-height: 1.5;
+        }
+
+        .rental-title:hover{
+          cursor: pointer;
+        }
+
+        .rental-detail{
+          margin: 5px 0 5px 15px;
+          font-size: 12px;
+          font-weight: 400;
+          color: #A02F18;
+        }
+
+        .rental-startend{
+          margin: 5px 0 5px 15px;
+          font-size: 12px;
+          font-weight: 400;
+          span {
+            color: black;
+            font-weight: 800;
+          }
+
+          
+        }
+      }
+    }
+  } 
+}
+.links {
+  span {
+    margin: 10px 0 5px 15px;
+    font-size: 12px;
+    font-weight: 400; 
+    color: $emerald;
+    text-decoration: none;
+  }
+  span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

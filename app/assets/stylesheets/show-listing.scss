@@ -1,0 +1,164 @@
+@import "variables";
+
+.main-section {
+  margin: 20px auto;
+  width: 85%;
+  height: 100%;
+  max-width: 1048px;
+  position: relative;
+  top: 69px;
+}
+
+.content {
+  width: 55%;
+  margin-right: 60px;
+  ////
+  float: left;
+  box-sizing: border-box;
+}
+
+.title-host-container {
+  display: flex;
+  justify-content: space-between;
+  // padding-right: 40px;
+
+  .title-location-container {
+    width: 83.3333%;
+    color: $black;
+    .title {
+      padding-bottom: 6px;
+      color: $black;
+      font-size: 28px;
+      font-weight: 800;
+    }
+
+    .city {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  .host-info-container {
+    width: 64px;
+    padding-left: 8px;
+
+    .host-picture {
+      background-image: image_url('host.jpg');
+      display: block;
+      margin: 0 auto;
+      height: 64px;
+      width: 64px;
+      border-radius: 50%;
+      background-size: cover;
+    }
+    .host-name {
+      display: block;
+      font-size: 14px;
+      color: $grey;
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+}
+
+.listing-fact {
+  display: block;
+  padding-bottom: 35px;
+  border-bottom: 1px solid $nav-grey;
+  .house-fact{
+    display: flex;
+    justify-content: left;
+    margin-top: 25px;
+    .icon {
+      font-size: 12px;
+      margin-right: 15px;
+    }
+
+    .listing-factsheet{
+
+      .listing-type{
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      .listing-facts{
+        display: flex;
+        justify-content: left;
+        margin-top: 5px;
+
+        [class|=num] {
+          font-size: 16px;
+          font-weight: 300;
+          margin-right: 25px;
+        }
+      }
+
+      .listing-explaination {
+        margin-top: 5px;
+        font-size: 16px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+
+.listing-title {
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+
+.listing-description {
+  padding: 25px 0 30px 0;
+  line-height: 1.6;
+  border-bottom: 1px solid $nav-grey;
+}
+
+.listing-amenities {
+  padding: 30px 0;
+  line-height: 1.6;
+  border-bottom: 1px solid $nav-grey;
+
+  .amenities-row {
+    display: flex;
+
+    .amenities-item {
+      width: 50%;
+      font-size: 16px;
+      font-weight: 400;
+      margin: 10px 10px;
+      i {
+        font-size: 16px;
+        margin-right: 15px;
+      }
+    }
+  }
+}
+
+.listing-calendar {
+  padding: 30px 0;
+  line-height: 1.6;
+  border-bottom: 1px solid $nav-grey;
+  .calendar-row {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+  }
+}
+
+.listing-reviews{
+  padding: 30px 0;
+  line-height: 1.6;
+  border-bottom: 1px solid $nav-grey;
+}
+
+.listing-option {
+  display: inline-block;
+  padding-top: 20px;
+  color: $emerald;
+  font-weight: 800;
+}
+.listing-option:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

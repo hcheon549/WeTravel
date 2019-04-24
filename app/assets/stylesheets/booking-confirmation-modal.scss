@@ -1,0 +1,67 @@
+@import "variables";
+
+.booking-confirmation-form{
+  position: absolute;
+  background: white;
+  top: 100px;
+  left: 50%;
+  margin-left: -250px;
+  padding: 12px;
+  border-radius: 4px;
+  width: 400px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  font-weight: 900;
+  text-align: center;
+  z-index: 3;
+
+  .booking-title{
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .booking-details-container{
+    padding-bottom: 20px;
+    .listing-photo{
+      height: 160px;
+      width: 240px;
+      margin: 20px auto;
+      background: $nav-grey;
+      background-image: image_url('home.jpeg');
+      background-size: cover;
+    }
+    .booking-detail{
+      font-weight: 200;
+      margin: 5px auto;
+      span {
+        font-weight: 800;
+      }
+    }
+  }
+
+  .booking-buttons-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    button:first-of-type {
+      padding: 8px;
+      width: 40%;
+      font-size: 14px;
+      font-weight: 600;
+      background: $emerald;
+      color: white;
+      border-radius: 3px;
+    }
+    button:last-of-type {
+      padding: 8px;
+      width: 40%;
+      font-size: 14px;
+      font-weight: 600;
+      background: $pink;
+      color: white;
+      border-radius: 3px;
+    }
+    button:hover{
+      cursor: pointer;
+    }
+  }
+}

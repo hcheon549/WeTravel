@@ -1,0 +1,83 @@
+@import "variables";
+
+.search-form{
+  position: relative;
+  background: white;
+  border-radius: 4px;
+  width: 365px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  padding: 32px 32px 24px;
+  font-weight: 900;
+  top: 15%;
+  left: 15%;
+
+  button {
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    background: $emerald;
+    padding: 10px 22px;
+    color: white;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: $emerald;
+    cursor: pointer;
+  }
+}
+
+
+.search-form-field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  // display: flex;
+
+  input {
+    display: block;
+    border-radius: 2px;
+    border: 1px solid $light-grey;
+    box-sizing: border-box;
+
+    // width: calc(100% - 21px);
+    width: 100%;
+    color: $grey;
+    font-size: 15px;
+    padding: 10px 10px
+  }
+
+  input:hover, textarea:hover,
+  input:focus, textarea:focus {
+    border: 1px solid $emerald;
+  }
+
+  label {
+    display: block;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+    padding: 0 0 5px 0;
+  }
+
+  > textarea {
+    display: block;
+    color: $grey;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid $light-grey;
+    width: calc(100% - 21px);
+    height: 50px;
+    resize: none;
+  }
+}
+
+.search-form-button{
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+.inline {
+  display: flex;
+}
+
+.search-form-inline-field {
+  width: 100%;
+}

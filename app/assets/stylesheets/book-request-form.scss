@@ -1,0 +1,141 @@
+@import "variables";
+
+.booking-container {
+  float: left;
+  box-sizing: border-box;
+  width: 34%;
+  position: sticky;
+  top: 85px;  
+  padding: 20px;
+  border: 1px solid $booking-request-border;
+  .price-container {
+    font-size: 12px;
+    span{
+      font-size: 24px;
+      font-weight: 800;
+      margin-right: 3px;
+    }
+  }
+  .listing-review {
+    padding-top: 10px;
+    padding-bottom: 12px;
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+  }
+  .draw-line{
+    padding-top: 12px;
+    margin-bottom: 12px;
+    border-bottom: 1px solid $booking-request-border;
+  }
+
+  .booking-request-form-container {
+    width: 100%;
+    font-size: 16px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+    label {
+      display: block;
+      font-weight: 600;
+      margin-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    input{
+      width: 100%;
+      border-radius: 2px;
+      box-sizing: border-box;
+      border: 1px solid $booking-request-border;
+      color: $grey;
+      font-size: 14px;
+      padding: 10px;
+    }
+
+    input:hover, input:focus {
+      border: 1px solid $emerald;
+    }
+
+    li {
+      color: red;
+      margin-top: 10px;
+    }
+
+    .booking-form-field {
+      padding-bottom: 10px;
+      width: 100%;
+    }
+
+    .booking-form-field-inline {
+      display: flex;
+      padding-bottom: 10px;
+      width: 100%;
+      box-sizing: border-box;
+      .booking-form-inline-field {
+        width: 50%;
+        input {
+          padding: 10px 0 10px 10px;
+        }
+      }
+    }
+
+    .booking-button{
+      padding: 10px 0;
+      button {
+        width: 100%;
+        background: $emerald;
+        font-size: 16px;
+        font-weight: 600;
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin: 0 auto;
+        border-radius: 3px;
+      }
+    }
+
+    .calculation-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0 10px 0;
+      border-bottom: 1px solid $booking-request-border;
+      font-size: 14px;
+      font-weight: 200;
+      .fee-description{
+        margin-left: 2px;
+        i {
+          margin-left: 3px;
+          font-weight: 100;
+        }
+        i:hover {
+          color: $emerald;
+          cursor: pointer;
+        }
+      }
+      .fee{
+        margin-right: 2px;
+      }
+    }
+    .calculation-row-total {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0 10px 0;
+      font-size: 14px;
+      // font-weight: 200;
+      font-weight: 800;
+      .fee-description{
+        margin-left: 2px;
+      }
+      .fee{
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+.no-charge {
+  display: block;
+  font-size: 16px;
+  font-weight: 800;
+  text-align: center;
+}

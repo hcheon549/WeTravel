@@ -1,0 +1,13 @@
+@import "variables";
+
+.on {
+  background-image: image_url('home.jpeg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.off {
+  position: relative;
+  background: white;
+  height: 100vh;
+}

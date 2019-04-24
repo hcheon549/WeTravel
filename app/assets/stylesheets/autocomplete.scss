@@ -1,0 +1,21 @@
+@import "variables";
+
+.pac-item {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  padding: 7px;
+  border: none;
+  
+}
+
+.pac-item:hover{
+  background: $nav-grey;
+}
+
+.pac-item-query{
+  font-weight: 200;
+}
+
+.pac-matched {
+  font-weight: 800;
+}

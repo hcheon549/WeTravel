@@ -1,0 +1,94 @@
+@import "variables";
+
+// .session-screen {
+//   position: fixed;
+//   min-height: 2000px;
+//   background: rgba(0,0,0,0.7);
+//   top: 0;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 2;
+// }
+
+.session-form{
+  position: absolute;
+  background: white;
+  top: 100px;
+  left: 50%;
+  margin-left: -250px;
+  padding: 12px;
+  border-radius: 4px;
+  width: 460px;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+  font-weight: 900;
+  z-index: 3;
+  // overflow-y: auto;
+
+  .session-form-fill {
+    padding: 32px 32px 24px;
+  }
+
+  .session-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+    color: $black;
+  }
+
+  .session-close:hover {
+    color: $emerald;
+  }
+
+  .switch-button {
+    color: $emerald;
+    font-weight: 900;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  button {
+    display: block;
+    font-size: 16px;
+    border-radius: 4px;
+    background: $emerald;
+    padding: 10px 22px;
+    color: white;
+    font-weight: 600;
+    border-width: 2px;
+    border-color: $emerald;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  li {
+    color: red;
+    margin-top: 10px;
+  }
+}
+
+.switch-form > p {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.line-container{
+  padding: 12px 0;
+}
+.draw-line {
+  border-bottom: 1px solid #EBEBEB;
+}
+
+.demo-user {
+  padding: 5px 0;
+  button {
+    color: $emerald;
+    border-width: 2px;
+    padding: 10px 22px;
+    background: white;
+    border-color: $emerald;
+  }
+}
