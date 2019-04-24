@@ -37,7 +37,7 @@ demouser_listing2 = Listing.create!(
   num_guest: 2,
   num_room: 1,
   num_bed: 1,
-  price: 119.95,
+  price: 120,
   description: "This clean and very comfortable room in the heart of Midtown Manhattan has the best location for any visitors and is two blocks away from Bryant Park. Am always excited to share the space with guests! Thanks for taking a look."
 )
 
@@ -63,7 +63,7 @@ user1_listing2 = Listing.create!(
   num_guest: 2,
   num_room: 0,
   num_bed: 1,
-  price: 199.99,
+  price: 200,
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 
@@ -89,7 +89,7 @@ user1_listing4 = Listing.create!(
   num_guest: 2,
   num_room: 0,
   num_bed: 1,
-  price: 199.99,
+  price: 200,
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 
@@ -102,7 +102,7 @@ user1_listing5 = Listing.create!(
   num_guest: 5,
   num_room: 2,
   num_bed: 2,
-  price: 300.00,
+  price: 300,
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 

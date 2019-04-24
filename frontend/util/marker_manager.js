@@ -20,10 +20,25 @@ class MarkerManager {
 
   createMarkerFromListing(listing) {
     const position = new google.maps.LatLng(listing.lat, listing.long);
+    const markerIcon = {
+      path: 'M22-48h-45v28h16l6 5 6-5h16z',
+      fillColor: 'white',
+      fillOpacity: 1,
+      scale: 0.85,
+      labelOrigin: new google.maps.Point(-1, -33),
+      strokeColor: 'gray',
+    }
+    const markerLabel = {
+      text: `$${listing.price}`,
+      fontWeight: '800',
+      fontSize: '12px',
+    }
     const marker = new google.maps.Marker({
       position,
       map: this.map,
-      listingId: listing.id
+      listingId: listing.id,
+      icon: markerIcon,
+      label: markerLabel
     });
     
     marker.addListener('click', () => this.handleClick(listing, marker));
