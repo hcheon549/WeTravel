@@ -42,13 +42,15 @@ class SearchBar extends React.Component {
             }
           }
 
+          const hashContent = `&lat=${this.location.center.lat}&lng=${this.location.center.lng}&checkin=null&checkout=null&guests=1`
+
           this.props.history.push({
             pathname: `/index`,
-            hash: `&lat=${this.location.center.lat}&lng=${this.location.center.lng}`,
+            hash: hashContent,
             state: location,
           })
        } else {
-          console.log(results)
+          
         }
       })
     }

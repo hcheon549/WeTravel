@@ -38,7 +38,6 @@ class ListSearchForm extends React.Component {
     const geocoder = new google.maps.Geocoder();
     const address = document.getElementById('location_search').value || this.defaultAddress;
     // let formatted_address, geometry
-    console.log(address)
     geocoder.geocode( { 'address': address }, (results, status) => {
       if (status == 'OK'){
         const formatted_address = results[0].formatted_address

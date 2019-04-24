@@ -23,7 +23,7 @@ class Listing < ApplicationRecord
     cover = Rental.select("listing_id")
                   .where("? < start_date AND ? > end_date",
                           Date.parse(stay[:start_date]), Date.parse(stay[:end_date]))
-
+                          
     self.in_bounds(bounds, guests).where.not(id: between).where.not(id: cover)
   end
 

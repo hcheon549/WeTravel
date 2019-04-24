@@ -41,7 +41,7 @@ class UserPage extends React.Component {
 
           <div className="user-info-container">
             <div className="user-activity">
-            <i className="far fa-comment"></i>3 review
+            <i className="far fa-comment"></i>3 reviews
             </div>
             <div className="user-activity">
               <i className="fas fa-user-check"></i>verified
