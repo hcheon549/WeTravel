@@ -28,11 +28,11 @@ class NavBar extends React.Component {
         <li onClick={logout}>Log Out</li>
       </ul>
     ) : (<></>)
-
+    
     const display = currentUser ? (
       <div className="profile-menu">
         <div className="currentuser-name">{currentUser.fname} {currentUser.lname}</div>
-        <div className="currentuser-icon" onClick={() => this.showDropdown()}></div>
+        <img className="currentuser-icon" src={currentUser.photoUrl} onClick={() => this.showDropdown()} />
       </div>
     ) : (
       <div className="items">

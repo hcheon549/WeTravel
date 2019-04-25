@@ -11,6 +11,8 @@ class BookingActionModal extends React.Component {
       num_guest: this.props.bookingData.num_guest,
     }
 
+    this.photoUrl = this.props.bookingData.photoUrl;
+
     // Modal Content Variation
     this.bookingPrompt = ( this.props.formType === "Cancellation" ) ? "Please, confirm your cancellation request" : "Please, confirm your rental request detail";
     this.blueButton = ( this.props.formType === "Cancellation" ) ? "Cancel this Rental" : "Confirm";
@@ -52,7 +54,7 @@ class BookingActionModal extends React.Component {
         <div className="draw-line"></div>
 
         <div className="booking-details-container">
-          <div className="listing-photo"></div>
+          <img className="listing-photo" src={this.photoUrl} />
           <div className="booking-detail"><span>{bookingData.title}</span></div>
           <div className="booking-detail"><span>Check In:</span> {this.formatDate(bookingData.start_date)}</div>
           <div className="booking-detail"><span>Check Out:</span> {this.formatDate(bookingData.end_date)}</div>

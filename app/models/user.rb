@@ -12,6 +12,8 @@ class User < ApplicationRecord
         foreign_key: :host_id,
         primary_key: :id
 
+    has_one_attached :photo
+
     def password=(password)
         @password = password
         self.password_digest = BCrypt::Password.create(password)

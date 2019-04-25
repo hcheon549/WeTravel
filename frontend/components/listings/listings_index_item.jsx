@@ -1,10 +1,12 @@
 import React from 'react';
 
 const ListingsIndexItem = ({ listing, history }) => {
+  const photo = Boolean(listing.photoUrls) ? listing.photoUrls[0] : "";
+
   return (
     <div className="listing-box">
       <div className="image">
-        <div>Image goes here</div>
+        <img src={photo} alt="Image goes here" />
       </div>
 
       <div className="textarea" onClick={() => {

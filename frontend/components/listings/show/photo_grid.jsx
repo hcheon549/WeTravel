@@ -1,16 +1,17 @@
 import React from 'react';
 
-const PhotoGrid = () => {
+const PhotoGrid = ({photoUrls}) => {
+  
   return (
     <div className="photo-box">
-      <div className="big-photo-left"></div>  
+      <img className="big-photo-left" src={photoUrls[0]} /> 
       <div className="photos">
-        <div className="photo-up-1"></div>
-        <div className="photo-down-1"></div>
+        <img className="photo-up-1" src={photoUrls[1]} />
+        <img className="photo-down-1" src={photoUrls[2]} />
       </div>
       <div className="photos">
-        <div className="photo-up-2"></div>
-        <div className="photo-down-2"></div>
+        <img className="photo-up-2" src={photoUrls[3]} />
+        <img className="photo-down-2" src={photoUrls[4]} />
       </div>
     </div>
   )

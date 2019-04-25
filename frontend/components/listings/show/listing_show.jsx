@@ -15,14 +15,14 @@ class ListShow extends React.Component {
 
   render(){
     const { listing, currentUserId, history } = this.props;
-    
+  
     if (!listing){
       return <div></div>
     }
     
     return(
       <>
-        <PhotoGrid />
+        <PhotoGrid photoUrls={listing.photoUrls} />
         <div className="main-section">
           <ListingContent
             listing={listing}

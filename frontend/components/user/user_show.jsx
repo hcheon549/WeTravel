@@ -19,6 +19,7 @@ class UserPage extends React.Component {
 
   render() {
     const { currentUser, deleteRental, rentals, openBookingModal } = this.props
+    
     const rentalsList = rentals ? (rentals.map((rental, idx) => {
       return <RentalList
                 key={idx}
@@ -35,7 +36,8 @@ class UserPage extends React.Component {
       <div className="main-section-profile">        
         <div className="user-glance-container">
           <div className="user-info-container">
-            <div className="user-picture"></div>
+            {/* <div className="user-picture"></div> */}
+            <img className="user-picture" src={currentUser.photoUrl} />
             <div className="upload-image">Upload Photo</div>
           </div>
 

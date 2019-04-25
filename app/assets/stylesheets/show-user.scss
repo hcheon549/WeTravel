@@ -29,7 +29,7 @@
       margin: 0 0 20px 10px;
     }
     .user-picture {
-      background-image: image_url('profile.jpg');
+      // background-image: image_url('profile.jpg');
       display: block;
       margin: 0 auto;
       height: 80px;
@@ -46,6 +46,10 @@
       color: $emerald;
       text-align: center;
       padding-top: 10px;
+    }
+    .upload-image:hover{
+      text-decoration: underline;
+      cursor: pointer;
     }
 
     .user-activity {

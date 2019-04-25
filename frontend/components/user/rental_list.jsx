@@ -13,10 +13,12 @@ class RentalList extends React.Component  {
 
   render() {
     const { rental, viewListing, deleteRental, openBookingModal } = this.props
-
+    
     const num_nights = this.getNumDays(rental.start_date, rental.end_date)
     const total_price = Math.floor(rental.price * 0.12 + rental.price * num_nights + 35)
-
+    
+    const photo = Boolean(rental.photoUrls) ? rental.photoUrls[0] : "";
+    
     const modalData = {
       rentalId: rental.id,
       start_date: new Date(rental.start_date),
@@ -24,11 +26,12 @@ class RentalList extends React.Component  {
       listing_id: rental.listing_id,
       total_price: total_price,
       title: rental.title,
+      photoUrl: photo
     }
-    
+
     return (
       <div className="user-rental-list">
-        <div className="user-rental-picture"></div>
+        <img className="user-rental-picture" src={photo} alt="pic"/>
         <div className="user-rental-information">
           <div className="rental-title" onClick={() => viewListing(rental.listing_id)} >{rental.title}</div>
           <div className="rental-detail">{rental.listing_type} · {rental.num_room} ROOMS · {rental.num_bed} BEDS</div>

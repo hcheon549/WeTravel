@@ -51,6 +51,7 @@ class BookRequestForm extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+    
     if (!this.props.currentUserId) {
       this.props.openSessionModal();
     } else {
@@ -61,7 +62,8 @@ class BookRequestForm extends React.Component {
           num_guest: this.state.num_guest,
           listing_id: this.state.listing_id,
           total_price: this.total_price,
-          title: this.props.listing.title
+          title: this.props.listing.title,
+          photoUrl: this.props.listing.photoUrls[0]
         }
         this.props.openBookingModal(modalData)
       } else {

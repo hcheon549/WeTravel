@@ -14,6 +14,8 @@ class Listing < ApplicationRecord
     foreign_key: :listing_id,
     primary_key: :id
 
+  has_many_attached :photos
+
   def self.in_bounds_with_availability(bounds, guests, stay)
     between = Rental.select("listing_id")
                     .where("? BETWEEN start_date AND end_date

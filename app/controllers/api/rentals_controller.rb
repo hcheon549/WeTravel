@@ -19,7 +19,6 @@ class Api::RentalsController < ApplicationController
     @rental = Rental.find(params[:id])
     @rental.destroy
     render json: @rental.id
-
   end
 
   private
