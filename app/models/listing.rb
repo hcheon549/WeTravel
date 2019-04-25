@@ -4,10 +4,10 @@ class Listing < ApplicationRecord
   validates :title, length: { minimum: 5 }
   validates :description, length: { minimum: 10 }
 
-  # belongs_to :host,
-  #   class_name: :User,
-  #   foreign_key: :host_id,
-  #   primary_key: :id
+  belongs_to :host,
+    class_name: :User,
+    foreign_key: :host_id,
+    primary_key: :id
 
   has_many :rentals,
     class_name: :Rental,

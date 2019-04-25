@@ -65,7 +65,9 @@ class ListingContent extends React.Component {
     const houseIcon = this.houseIcon();
     this.defineDisabledDays();
     const nextMonth = this.nextMonth();
-    
+    const hostPhotoUrl = Boolean(this.listing.hostPhotoUrl) ? this.listing.hostPhotoUrl : "";
+    const hostName = Boolean(this.listing.hostName) ? this.listing.hostName : "";
+
     return (
       <div className="content">
         <div className="listing-content">
@@ -76,7 +78,9 @@ class ListingContent extends React.Component {
             </div>
 
             <div className="host-info-container">
-              <div className="host-picture"></div>
+              <div className="host-picture">
+                {/* <img className="host-picture" src={hostPhotoUrl} alt="host" /> */}
+              </div>
               <div className="host-name">Host</div>
             </div>
           </div>
