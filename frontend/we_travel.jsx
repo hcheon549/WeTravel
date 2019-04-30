@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", () =>{
       };
     store = configureStore(preloadedState);
 
-    // Clean up after ourselves so we don't accidentally use the
-    // global currentUser instead of the one in the store
     delete window.currentUser;
 
   } else {

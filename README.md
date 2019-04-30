@@ -2,6 +2,16 @@
   <img src="https://github.com/hcheon549/WeTravel/blob/master/app/assets/images/ReadmeLogo.png">
 </p>
 
+## Technologies
+
+### Backend
++ Ruby on Rails
++ PostgreSQL
+
+### Frontend
++ React.js
++ Redux
+
 ## Overview
 [Live Demo](https://we-travel.herokuapp.com)
 
@@ -15,15 +25,6 @@ Users can see the detail of each listings by clicking the title of the search re
 
 Users can also check their own page where they can upload their photos and update their information. Users can also check their past and future bookings, update or cancel.
 
-## Technologies
-
-### Backend
-+ Ruby on Rails
-+ PostgreSQL
-
-### Frontend
-+ React.js
-+ Redux
 
 ### APIs
 + [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial)
