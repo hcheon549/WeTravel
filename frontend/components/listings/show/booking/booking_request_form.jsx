@@ -1,5 +1,6 @@
 import React from 'react';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
+import { formatDate, parseDate } from 'react-day-picker/moment';
 
 class BookRequestForm extends React.Component {
   constructor(props) {
@@ -186,31 +187,37 @@ class BookRequestForm extends React.Component {
             <div className="booking-form-inline-field">
               <label>CHECK-IN</label>
               <DayPickerInput 
-                  dayPickerProps={{
-                    disabledDays: [
-                      ...this.disabledDays,
-                      {
-                        before: today,
-                      },
-                    ]
-                  }}
-                  onDayChange={this.handleStartDateChange} />
+                formatDate={formatDate}
+                parseDate={parseDate}
+                placeholder={'MM-DD-YYYY'}
+                dayPickerProps={{
+                  disabledDays: [
+                    ...this.disabledDays,
+                    {
+                      before: today,
+                    },
+                  ]
+                }}
+                onDayChange={this.handleStartDateChange} />
             </div>
 
             <div className="booking-form-inline-field">
               <label>CHECKOUT</label>
               <DayPickerInput
-                  dayPickerProps={{
-                    month: start,
-                    disabledDays: [
-                      ...this.disabledDays,
-                      {
-                        before: start,
-                      },
-                    ]
-                  }}
-                  onDayChange={this.handleEndDateChange}
-                />
+                formatDate={formatDate}
+                parseDate={parseDate}  
+                placeholder={'MM-DD-YYYY'}
+                dayPickerProps={{
+                  month: start,
+                  disabledDays: [
+                    ...this.disabledDays,
+                    {
+                      before: start,
+                    },
+                  ]
+                }}
+                onDayChange={this.handleEndDateChange}
+              />
             </div>
           </div>
 

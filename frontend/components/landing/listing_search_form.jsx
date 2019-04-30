@@ -1,5 +1,7 @@
 import React from 'react';
 import DayPickerInput from 'react-day-picker/DayPickerInput';
+import { formatDate, parseDate } from 'react-day-picker/moment';
+
 
 class ListSearchForm extends React.Component {
   constructor(props) {
@@ -112,12 +114,10 @@ class ListSearchForm extends React.Component {
             <div className="search-form-field inline">
               <div className="search-form-inline-field">
                 <label>CHECK-IN</label>
-                {/* <input
-                  type="date"
-                  placeholder="mm/dd/yyyy"
-                  onChange={this.updateInput('checkin')}
-                /> */}
                 <DayPickerInput 
+                  formatDate={formatDate}
+                  parseDate={parseDate}        
+                  placeholder={'MM-DD-YYYY'}
                   dayPickerProps={{
                     disabledDays: { 
                       before: today
@@ -128,12 +128,10 @@ class ListSearchForm extends React.Component {
 
               <div className="search-form-inline-field">
                 <label>CHECKOUT</label>
-                {/* <input
-                  type="date"
-                  placeholder="mm/dd/yyyy"
-                  onChange={this.updateInput('checkout')}
-                /> */}
                 <DayPickerInput
+                  formatDate={formatDate}
+                  parseDate={parseDate}        
+                  placeholder={'MM-DD-YYYY'}
                   dayPickerProps={{
                     month: start,
                     disabledDays: {

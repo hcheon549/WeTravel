@@ -35,6 +35,7 @@ demouser_listing1 = Listing.create!(
   price: 450,
   description: "This clean and very comfortable room in the heart of Downtown Los Angeles has the best location for any visitors and is two blocks away from Bryant Park. Am always excited to share the space with guests! Thanks for taking a look."
 )
+
 demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_1.jpg"), filename: "listing1_1.jpg")
 demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_2.jpg"), filename: "listing1_2.jpg")
 demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_3.jpg"), filename: "listing1_3.jpg")
@@ -160,8 +161,8 @@ user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcadem
 Rental.create!(
   renter_id: demouser.id,
   listing_id: user1_listing1.id,
-  start_date: "2019-04-16",
-  end_date: "2019-04-20",
+  start_date: "2019-05-16",
+  end_date: "2019-05-20",
   num_guest: 2
 )
 
@@ -169,8 +170,8 @@ Rental.create!(
 Rental.create!(
   renter_id: user1.id,
   listing_id: user1_listing1.id,
-  start_date: "2019-04-22",
-  end_date: "2019-04-25",
+  start_date: "2019-05-22",
+  end_date: "2019-05-25",
   num_guest: 2
 )
 
@@ -178,8 +179,8 @@ Rental.create!(
 Rental.create!(
   renter_id: user2.id,
   listing_id: user1_listing1.id,
-  start_date: "2019-04-26",
-  end_date: "2019-04-29",
+  start_date: "2019-05-26",
+  end_date: "2019-05-29",
   num_guest: 2
 )
 
@@ -187,8 +188,8 @@ Rental.create!(
 Rental.create!(
   renter_id: demouser.id,
   listing_id: user1_listing2.id,
-  start_date: "2019-04-21",
-  end_date: "2019-04-24",
+  start_date: "2019-05-21",
+  end_date: "2019-05-24",
   num_guest: 2
 )
 
@@ -196,8 +197,8 @@ Rental.create!(
 Rental.create!(
   renter_id: user1.id,
   listing_id: user1_listing2.id,
-  start_date: "2019-04-26",
-  end_date: "2019-04-29",
+  start_date: "2019-05-26",
+  end_date: "2019-05-29",
   num_guest: 2
 )
 
@@ -205,8 +206,8 @@ Rental.create!(
 Rental.create!(
   renter_id: user2.id,
   listing_id: user1_listing2.id,
-  start_date: "2019-04-30",
-  end_date: "2019-05-2",
+  start_date: "2019-05-30",
+  end_date: "2019-06-2",
   num_guest: 2
 )
 
@@ -214,8 +215,8 @@ Rental.create!(
 Rental.create!(
   renter_id: demouser.id,
   listing_id: user1_listing5.id,
-  start_date: "2019-04-25",
-  end_date: "2019-04-27",
+  start_date: "2019-05-25",
+  end_date: "2019-05-27",
   num_guest: 2
 )
 
@@ -223,7 +224,7 @@ Rental.create!(
 Rental.create!(
   renter_id: user1.id,
   listing_id: demouser_listing1.id,
-  start_date: "2019-04-8",
-  end_date: "2019-04-10",
+  start_date: "2019-06-8",
+  end_date: "2019-06-10",
   num_guest: 1
 )
