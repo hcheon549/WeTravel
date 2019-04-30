@@ -12,16 +12,16 @@ Listing.destroy_all
 Rental.destroy_all
 
 user1 = User.create!(email: "user1@gmail.com", password: "user1", fname: "Eric", lname: "Cheon", introduction: "I'm the founder of WeTravel!")
-user1.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user1.jpg"), filename: "user1.jpg")
+# user1.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user1.jpg"), filename: "user1.jpg")
 
 user2 = User.create!(email: "user2@gmail.com", password: "user2", fname: "Litton", lname: "Liao", introduction: "Travel-holic!")
-user2.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user2.jpg"), filename: "user.jpg")
+# user2.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user2.jpg"), filename: "user.jpg")
 
 user3 = User.create!(email: "user3@gmail.com", password: "user3", fname: "Narae", lname: "Lee", introduction: "")
-user3.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user3.jpg"), filename: "user3.jpg")
+# user3.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/user3.jpg"), filename: "user3.jpg")
 
 demouser = User.create!(email: "demo-user@email.com", password: "demo-user", fname: "Demo", lname: "User", introduction: "Demo user introduction text")
-demouser.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/demouser.jpg"), filename: "demouser.jpg")
+# demouser.photo.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/WeTravel/app/assets/images/users/demouser.jpg"), filename: "demouser.jpg")
 
 demouser_listing1 = Listing.create!(
   host_id: demouser.id,
