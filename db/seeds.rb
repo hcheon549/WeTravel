@@ -40,17 +40,17 @@ demouser_listing1 = Listing.create!(
   description: "This clean and very comfortable room in the heart of Downtown Los Angeles has the best location for any visitors and is two blocks away from Bryant Park. Am always excited to share the space with guests! Thanks for taking a look."
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_1.jpg"), filename: "listing1_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_2.jpg"), filename: "listing1_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_3.jpg"), filename: "listing1_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_4.jpg"), filename: "listing1_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_5.jpg"), filename: "listing1_5.jpg")
+demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_1.jpg"), filename: "listing1_1.jpg")
+demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_2.jpg"), filename: "listing1_2.jpg")
+demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_3.jpg"), filename: "listing1_3.jpg")
+demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_4.jpg"), filename: "listing1_4.jpg")
+demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing1_5.jpg"), filename: "listing1_5.jpg")
 
-demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_1.jpg"), filename: "listing1_1.jpg")
-demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_2.jpg"), filename: "listing1_2.jpg")
-demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_3.jpg"), filename: "listing1_3.jpg")
-demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_4.jpg"), filename: "listing1_4.jpg")
-demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_5.jpg"), filename: "listing1_5.jpg")
+# demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_1.jpg"), filename: "listing1_1.jpg")
+# demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_2.jpg"), filename: "listing1_2.jpg")
+# demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_3.jpg"), filename: "listing1_3.jpg")
+# demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_4.jpg"), filename: "listing1_4.jpg")
+# demouser_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing1_5.jpg"), filename: "listing1_5.jpg")
 
 
 demouser_listing2 = Listing.create!(
@@ -65,17 +65,17 @@ demouser_listing2 = Listing.create!(
   price: 120,
   description: "This clean and very comfortable room in the heart of Midtown Manhattan has the best location for any visitors and is two blocks away from Bryant Park. Am always excited to share the space with guests! Thanks for taking a look."
 )
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_1.jpg"), filename: "listing2_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_2.jpg"), filename: "listing2_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_3.jpg"), filename: "listing2_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_4.jpg"), filename: "listing2_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_5.jpg"), filename: "listing2_5.jpg")
+demouser_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_1.jpg"), filename: "listing2_1.jpg")
+demouser_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_2.jpg"), filename: "listing2_2.jpg")
+demouser_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_3.jpg"), filename: "listing2_3.jpg")
+demouser_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_4.jpg"), filename: "listing2_4.jpg")
+demouser_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing2_5.jpg"), filename: "listing2_5.jpg")
 
-demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_1.jpg"), filename: "listing2_1.jpg")
-demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_2.jpg"), filename: "listing2_2.jpg")
-demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_3.jpg"), filename: "listing2_3.jpg")
-demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_4.jpg"), filename: "listing2_4.jpg")
-demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_5.jpg"), filename: "listing2_5.jpg")
+# demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_1.jpg"), filename: "listing2_1.jpg")
+# demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_2.jpg"), filename: "listing2_2.jpg")
+# demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_3.jpg"), filename: "listing2_3.jpg")
+# demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_4.jpg"), filename: "listing2_4.jpg")
+# demouser_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing2_5.jpg"), filename: "listing2_5.jpg")
 
 
 user1_listing1 = Listing.create!(
@@ -91,17 +91,17 @@ user1_listing1 = Listing.create!(
   description: "Our home is located in a beautiful residential neighborhood of Mitown East, close to the Grand Central Terminal. You’ll love our place because of the comfy beds, updated furnishing and the private backyard! Our place is good for families (with kids), couples and groups. Our home has recently been renovated, including new paint, new light fixtures, new appliances, and almost all new furnishings!"
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_1.jpg"), filename: "listing3_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_2.jpg"), filename: "listing3_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_3.jpg"), filename: "listing3_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_4.jpg"), filename: "listing3_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_5.jpg"), filename: "listing3_5.jpg")
+user1_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_1.jpg"), filename: "listing3_1.jpg")
+user1_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_2.jpg"), filename: "listing3_2.jpg")
+user1_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_3.jpg"), filename: "listing3_3.jpg")
+user1_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_4.jpg"), filename: "listing3_4.jpg")
+user1_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing3_5.jpg"), filename: "listing3_5.jpg")
 
-user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_1.jpg"), filename: "listing3_1.jpg")
-user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_2.jpg"), filename: "listing3_2.jpg")
-user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_3.jpg"), filename: "listing3_3.jpg")
-user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_4.jpg"), filename: "listing3_4.jpg")
-user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_5.jpg"), filename: "listing3_5.jpg")
+# user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_1.jpg"), filename: "listing3_1.jpg")
+# user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_2.jpg"), filename: "listing3_2.jpg")
+# user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_3.jpg"), filename: "listing3_3.jpg")
+# user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_4.jpg"), filename: "listing3_4.jpg")
+# user1_listing1.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing3_5.jpg"), filename: "listing3_5.jpg")
 
 
 user1_listing2 = Listing.create!(
@@ -117,17 +117,17 @@ user1_listing2 = Listing.create!(
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_1.jpg"), filename: "listing4_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_2.jpg"), filename: "listing4_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_3.jpg"), filename: "listing4_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_4.jpg"), filename: "listing4_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_5.jpg"), filename: "listing4_5.jpg")
+user1_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_1.jpg"), filename: "listing4_1.jpg")
+user1_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_2.jpg"), filename: "listing4_2.jpg")
+user1_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_3.jpg"), filename: "listing4_3.jpg")
+user1_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_4.jpg"), filename: "listing4_4.jpg")
+user1_listing2.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing4_5.jpg"), filename: "listing4_5.jpg")
 
-user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_1.jpg"), filename: "listing4_1.jpg")
-user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_2.jpg"), filename: "listing4_2.jpg")
-user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_3.jpg"), filename: "listing4_3.jpg")
-user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_4.jpg"), filename: "listing4_4.jpg")
-user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_5.jpg"), filename: "listing4_5.jpg")
+# user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_1.jpg"), filename: "listing4_1.jpg")
+# user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_2.jpg"), filename: "listing4_2.jpg")
+# user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_3.jpg"), filename: "listing4_3.jpg")
+# user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_4.jpg"), filename: "listing4_4.jpg")
+# user1_listing2.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing4_5.jpg"), filename: "listing4_5.jpg")
 
 
 user1_listing3 = Listing.create!(
@@ -143,17 +143,17 @@ user1_listing3 = Listing.create!(
   description: "Our home is located in a beautiful residential neighborhood of Mitown East, close to the Grand Central Terminal. You’ll love our place because of the comfy beds, updated furnishing and the private backyard! Our place is good for families (with kids), couples and groups. Our home has recently been renovated, including new paint, new light fixtures, new appliances, and almost all new furnishings!"
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_1.jpg"), filename: "listing5_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_2.jpg"), filename: "listing5_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_3.jpg"), filename: "listing5_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_4.jpg"), filename: "listing5_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_5.jpg"), filename: "listing5_5.jpg")
+user1_listing3.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_1.jpg"), filename: "listing5_1.jpg")
+user1_listing3.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_2.jpg"), filename: "listing5_2.jpg")
+user1_listing3.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_3.jpg"), filename: "listing5_3.jpg")
+user1_listing3.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_4.jpg"), filename: "listing5_4.jpg")
+user1_listing3.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing5_5.jpg"), filename: "listing5_5.jpg")
 
-user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_1.jpg"), filename: "listing5_1.jpg")
-user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_2.jpg"), filename: "listing5_2.jpg")
-user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_3.jpg"), filename: "listing5_3.jpg")
-user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_4.jpg"), filename: "listing5_4.jpg")
-user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_5.jpg"), filename: "listing5_5.jpg")
+# user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_1.jpg"), filename: "listing5_1.jpg")
+# user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_2.jpg"), filename: "listing5_2.jpg")
+# user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_3.jpg"), filename: "listing5_3.jpg")
+# user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_4.jpg"), filename: "listing5_4.jpg")
+# user1_listing3.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing5_5.jpg"), filename: "listing5_5.jpg")
 
 
 user1_listing4 = Listing.create!(
@@ -169,17 +169,17 @@ user1_listing4 = Listing.create!(
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_1.jpg"), filename: "listing6_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_2.jpg"), filename: "listing6_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_3.jpg"), filename: "listing6_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_4.jpg"), filename: "listing6_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_5.jpg"), filename: "listing6_5.jpg")
+user1_listing4.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_1.jpg"), filename: "listing6_1.jpg")
+user1_listing4.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_2.jpg"), filename: "listing6_2.jpg")
+user1_listing4.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_3.jpg"), filename: "listing6_3.jpg")
+user1_listing4.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_4.jpg"), filename: "listing6_4.jpg")
+user1_listing4.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing6_5.jpg"), filename: "listing6_5.jpg")
 
-user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_1.jpg"), filename: "listing6_1.jpg")
-user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_2.jpg"), filename: "listing6_2.jpg")
-user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_3.jpg"), filename: "listing6_3.jpg")
-user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_4.jpg"), filename: "listing6_4.jpg")
-user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_5.jpg"), filename: "listing6_5.jpg")
+# user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_1.jpg"), filename: "listing6_1.jpg")
+# user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_2.jpg"), filename: "listing6_2.jpg")
+# user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_3.jpg"), filename: "listing6_3.jpg")
+# user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_4.jpg"), filename: "listing6_4.jpg")
+# user1_listing4.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing6_5.jpg"), filename: "listing6_5.jpg")
 
 
 user1_listing5 = Listing.create!(
@@ -195,17 +195,17 @@ user1_listing5 = Listing.create!(
   description: "Cozy Studio Apartment in one of the best locations! It has been recently renovated, so everything looks modern. Best-suited for a couple or friends. Literally everything is nearby. Empire state building, times square, MSG, chelsea, gramercy, bryan park and much much more."
 )
 
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_1.jpg"), filename: "listing7_1.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_2.jpg"), filename: "listing7_2.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_3.jpg"), filename: "listing7_3.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_4.jpg"), filename: "listing7_4.jpg")
-# demouser_listing1.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_5.jpg"), filename: "listing7_5.jpg")
+user1_listing5.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_1.jpg"), filename: "listing7_1.jpg")
+user1_listing5.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_2.jpg"), filename: "listing7_2.jpg")
+user1_listing5.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_3.jpg"), filename: "listing7_3.jpg")
+user1_listing5.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_4.jpg"), filename: "listing7_4.jpg")
+user1_listing5.photos.attach(io: open("https://s3.amazonaws.com/wetravel-production/listing7_5.jpg"), filename: "listing7_5.jpg")
 
-user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_1.jpg"), filename: "listing7_1.jpg")
-user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_2.jpg"), filename: "listing7_2.jpg")
-user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_3.jpg"), filename: "listing7_3.jpg")
-user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_4.jpg"), filename: "listing7_4.jpg")
-user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_5.jpg"), filename: "listing7_5.jpg")
+# user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_1.jpg"), filename: "listing7_1.jpg")
+# user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_2.jpg"), filename: "listing7_2.jpg")
+# user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_3.jpg"), filename: "listing7_3.jpg")
+# user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_4.jpg"), filename: "listing7_4.jpg")
+# user1_listing5.photos.attach(io: File.open("/Users/ericcheon/Documents/AppAcademy/FullStackProject/images/listing7_5.jpg"), filename: "listing7_5.jpg")
 
 
 # GRAND CENTRAL 1
