@@ -11,9 +11,13 @@ class RentalList extends React.Component  {
     return Math.floor((end_date_days - start_date_days ) / (1000 * 60 * 60 * 24));
   }
 
+  formatDate(date){
+    return date.slice(5, date.length) + "-" + date.slice(0, 4)
+  }
+
   render() {
     const { rental, viewListing, deleteRental, openBookingModal } = this.props
-    
+    // debugger
     const num_nights = this.getNumDays(rental.start_date, rental.end_date)
     const total_price = Math.floor(rental.price * 0.12 + rental.price * num_nights + 35)
     
@@ -36,11 +40,11 @@ class RentalList extends React.Component  {
           <div className="rental-title" onClick={() => viewListing(rental.listing_id)} >{rental.title}</div>
           <div className="rental-detail">{rental.listing_type} · {rental.num_room} ROOMS · {rental.num_bed} BEDS</div>
 
-          <div className="rental-startend"><span>Check-in:</span> {rental.start_date}</div>
-          <div className="rental-startend"><span>Check-out:</span> {rental.end_date}</div>
+          <div className="rental-startend"><span>Check-in:</span> {this.formatDate(rental.start_date)}</div>
+          <div className="rental-startend"><span>Check-out:</span> {this.formatDate(rental.end_date)}</div>
 
           <div className="links">
-            <span className="edit">Edit</span>
+            {/* <span className="edit">Edit</span> */}
             <span className="delete" onClick={() => openBookingModal(modalData)}>Cancel</span>
           </div>
         </div>
